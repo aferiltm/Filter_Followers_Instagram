@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Followers Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-md w-96">
+      <h1 class="text-xl font-bold mb-4">Filter Followers Instagram</h1>
+
+      <label class="block mb-2">Unggah file Following (JSON):</label>
+      <input type="file" id="followingInput" accept=".json" class="mb-4 p-2 border border-gray-300 rounded" />
+
+      <label class="block mb-2">Unggah file Followers (JSON):</label>
+      <input type="file" id="followersInput" accept=".json" class="mb-4 p-2 border border-gray-300 rounded" />
+
+      <button id="filterButton" class="bg-blue-500 text-white px-4 py-2 rounded">Filter Followers</button>
+
+      <div id="result" class="mt-4"></div>
+    </div>
+  </body>
+</html>
