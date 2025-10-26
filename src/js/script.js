@@ -70,7 +70,7 @@ document.getElementById("filterButton").addEventListener("click", function () {
   const followersFile = followersInput.files[0];
 
   if (!followingFile || !followersFile) {
-    alert("Silakan unggah kedua file JSON terlebih dahulu.");
+    alert("Please make sure to upload both JSON files first😊");
     return;
   }
 
@@ -106,12 +106,12 @@ function displayResult(notFollowingBack) {
   resultDiv.innerHTML = "";
 
   const heading = document.createElement("h6");
-  heading.textContent = "Orang yang tidak mengikuti anda:";
+  heading.textContent = "People Who Don't Follow You Back😔:";
   heading.className = "font-bold text-lg mb-2 mt-2";
   resultDiv.appendChild(heading);
 
   if (notFollowingBack.length === 0) {
-    resultDiv.innerHTML += "<p>Tidak ada followers yang tidak mengikuti kembali.</p>";
+    resultDiv.innerHTML += "<p>No followers found who don't follow you back🤔.</p>";
     return;
   }
 
@@ -127,7 +127,7 @@ function displayResult(notFollowingBack) {
 
   // Tambahkan jumlah hasil
   const count = document.createElement("p");
-  count.textContent = `Total: ${notFollowingBack.length} akun tidak mem-followback.`;
+  count.textContent = `Total: ${notFollowingBack.length} Not Following Back😢`;
   count.className = "mt-3 font-semibold text-sm text-gray-600";
   resultDiv.appendChild(count);
 }
